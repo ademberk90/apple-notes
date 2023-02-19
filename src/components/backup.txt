@@ -1,0 +1,63 @@
+  {/*   <View style={styles.titleAreaContainer}>
+           <TextInput
+            autoFocus={true}
+            style={styles.titleTextArea}
+            multiline={true}
+            onChangeText={val => setTitle(val)}
+            returnKeyType="next"
+            cursorColor={touchColor}
+            selectionColor={selectionColor}
+            spellCheck={false}
+            underlineColorAndroid="transparent"
+            autoCorrect={false}
+            value={title}
+          /> 
+        </View>
+        <TouchableOpacity
+          style={styles.textAreaContainer}
+          activeOpacity={1}
+          onPress={() => contentRef.current.focus()}>
+          <TextInput
+            autoFocus={true}
+            style={styles.contentTextArea}
+            multiline={true}
+            onChangeText={val => setContent(val)}
+            cursorColor={touchColor}
+            selectionColor={selectionColor}
+            spellCheck={false}
+            underlineColorAndroid="transparent"
+            autoCorrect={false}
+            ref={contentRef}
+            value={content}
+          />
+        </TouchableOpacity>
+ */}
+
+
+
+    const handleSaveNote = async () => {
+      try {
+        let existNoteList = await AsyncStorage.getItem('@notes');
+        let noteArray = [];
+  
+        const date = new Date();
+        if (existNoteList) {
+          noteArray = JSON.parse(existNoteList);
+          if (note) {
+            const noteIndex = noteArray.findIndex(item => item.id === note.id);
+            noteArray[noteIndex].title = title;
+            noteArray[noteIndex].content = content;
+            noteArray[noteIndex].date = date;
+          } else {
+            noteArray.push({id, title, content, date});
+          }
+        } else {
+          noteArray.push({id, title, content, date});
+        }
+        await AsyncStorage.setItem('@notes', JSON.stringify(noteArray));
+        navigation.goBack();
+      } catch (e) {
+        console.log(e);
+      }
+    };
+  
