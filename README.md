@@ -40,7 +40,7 @@ Here is the simple note application based on Apple Notes.
 
 ## Screenshots
 
-<div>
+<div style="margin:auto;">
 <img style="margin: 20" src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/1.png" width="250" />
 <img style="margin: 20" src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/2.png" width="250" />
 <img style="margin: 20" src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/3.png" width="250" />
