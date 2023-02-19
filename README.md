@@ -39,9 +39,9 @@ Here is the simple note application based on Apple Notes.
 
 
 ## Screenshots
-![1](https://github.com/ademberk90/apple-notes/blob/main/screenshoots/1.png | width=200)
-![2](./screenshots/2.png)
-![3](./screenshots/3.png)
+`![](https://github.com/ademberk90/apple-notes/blob/main/screenshoots/1.png| width=100)`
+`![](https://github.com/ademberk90/apple-notes/blob/main/screenshoots/2.png| width=100)`
+`![](https://github.com/ademberk90/apple-notes/blob/main/screenshoots/3.png| width=100)`
 
 
 
