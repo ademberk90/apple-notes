@@ -43,6 +43,11 @@ Here is the simple note application based on Apple Notes.
 <img src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/2.png"  width="250" >
 <img src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/3.png"  width="250" >
 
+<div>
+<img style="margin: 20" src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/1.png" width="250" height="450">
+<img style="margin: 20" src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/2.png" width="250" height="450" />
+<img style="margin: 20" src="https://github.com/ademberk90/apple-notes/blob/main/screenshoots/3.png" width="250" height="450" />
+</div>
 
 
 ## Installation
